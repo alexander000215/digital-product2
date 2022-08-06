@@ -1,0 +1,264 @@
+ /* contenido, 
+selectores de 'class' es el tipo de selector que se integra en una etiqueta como atributo y buscan el elemento del atributo 'class'.
+ejemplo:  <h1 class="cualquiernombre">titulo</h1> 
+esto en CSS se modificaria de forma:
+
+selector >
+
+ cualquiernombre{
+    color; red;
+
+}   < este seria el ejemplo en CSS
+Selectores de 'ID' tiene una funcion parecida al seletor de class la unica diferencia es que el selector se le agrega el '#' y no se le puede agregar el mismo atributo con el mismo nombre en este caso seria 'cualquiernombre':
+ejemplo: <h1 id="cualquiernombre">titulo</h1>
+
+selector> 
+
+GLOSARIO
+
+padding= relleno  
+margin= margen
+font-size= tamano de fuente
+font= fuente
+size= tamano o talla
+font-family= tipo de fuente
+padding-right= relleno-derecho
+background= fondo de cada cuadro
+center= centro
+top= parte superior
+background-position: center top= posicion de fondo: parte superior central
+ box-shadow=
+
+ */
+ /*-------------------------------Variables CSS */
+:root{
+    --Hblue-color:rgb(0, 132, 255);
+    --white-color:white;
+    --black-color:black;
+    /* Tipografia */
+    --normal:12px;
+    /* Espaciado */
+    --space:10px;
+    /* box shadow*/
+    --box:0px 0 2px 1px #e6e5e9
+    /* padding: 10%; */
+    --padding:10%;
+    
+
+}
+
+
+ /*-------------------------------Variables CSS */
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: helvetica;
+    }
+
+  p,  label{
+        font-size: vasr(--normal);
+    }
+
+nav{
+    display: flex;
+    background-color: var(--Hblue-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    color: var(--black-color);
+    font-size: 25px;
+    font-family: Impact;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li {
+    padding-left: 40px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: rgb(0, 255, 21);
+
+}
+/* -------------------------> nueva seccion */
+
+.main_section{
+    text-align: center;
+    padding: 15%;
+    font-size: 20px;
+}
+    
+    
+
+.products {
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+    height: 95px;
+    background-size: cover;
+
+}
+.product{
+    padding: var(--space);
+    margin-top: -300px;
+    
+}
+
+.product .content{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: 0 0 1px var(--black-color);
+    text-decoration: none;
+ }
+  
+.img_content {
+    text-align: center;
+}
+.imagen {
+    width: 430px;
+}
+
+.main_button{
+    background-color:var(--Hblue-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: 15px;
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main_button:hover{
+    background-color: blue;
+}
+
+/*------------nueva selecion de personajes comics */
+
+
+.beneficios{
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 13.5%;
+    display: flex;
+}
+
+.beneficio{
+    padding: var(--space);
+    margin-top: -300px;
+}
+.imagen2{
+    width: 300px;
+}
+
+
+.content_beneficio{
+    color: black;
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: 0 0 1px black;
+}
+
+/* -----------FIN de la seleccion de personajes comics */
+Inicio de la menciones
+
+.mention_tittle{
+    padding: var(--padding);
+    text-align: center;
+}
+
+.mentions{
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+    display: flex;
+}
+
+.mention{
+    padding: var(--space);
+    margin-top: -200px;
+}
+
+.content_mention{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: 0 0 2px var(--black-color);
+}
+
+.image2{
+    width: 150px;
+}
+
+/* ---------------------------------------------VENTA*/
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.imagen{
+    max-width: 250px;
+}
+
+.modulo_pago_images{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.data {
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+
+
+    
+     
+
+    
+
+/* ---------------------------------------------FIN-VENTA*/
+
+/* ---------------------------------------------FOOTER */
+
+
+footer{
+    display: flex;
+    background-color:var(--black-color) ;
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+.option{
+    padding-left: 40px;
+
+}
+
+
+

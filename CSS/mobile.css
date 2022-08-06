@@ -1,0 +1,34 @@
+@media screen and (max-width: 800px) {
+
+    .products {
+        display: inherit;
+        height: auto;
+    }
+
+    .product {
+        margin-top: auto;
+    }
+
+    .main_section {
+        padding: 4%;
+    }
+         .mention_tittle {
+             padding: 4%;
+         }
+    .beneficios, .mentions{
+        
+        display: inherit;
+        height: auto;
+    }
+
+        .imagen{
+            width: 350px;
+        }
+   
+
+    .beneficio, .mention{
+        margin-top: auto;
+    }
+} 
+   
+ 
